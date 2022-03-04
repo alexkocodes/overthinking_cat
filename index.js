@@ -1,6 +1,6 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "Day in the life of an NYU student..."
+    "This is a story about an overthinking cat..."
     );
 var iSpeed = 150; // time delay of print out
 var iIndex = 0; // start printing array at this posision
