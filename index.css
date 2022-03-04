@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rasa&display=swap');
+body {
+    background-color: #9A50F9 ;
+    transition: background-color 0.5s;
+}
+
+/*
+.col {
+    border: 1px solid white;
+}
+*/
+.page{
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    color: #E5E5E5;
+    /*
+    border: 1px solid black;
+    */
+}
+
+/* page 1 */
+#page1{
+    padding: 180px;
+    margin-left: 20px;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#page1 hr {
+    /*
+    border-top: 3px solid rgb(255, 255, 255) !important;
+    */
+    width: 600px;
+    position: absolute;
+    top: 530px;
+    left: 185px;
+}
+
+ #page1 h1{
+    font-size: 90px;
+}
