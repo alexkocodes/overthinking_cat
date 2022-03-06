@@ -34,3 +34,8 @@ function typewriter()
     iIndex=0;
 }
 typewriter();
+
+window.addEventListener("load", function(){
+    AOS.init();
+});
+

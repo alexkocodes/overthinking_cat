@@ -11,8 +11,8 @@ body {
 }
 */
 .page{
-    /* min-height: 800px; */
-    min-height: 100vh;
+    min-height: 800px;
+    /* min-height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,11 +25,26 @@ body {
 
 .frame-big, .panel {
     color: black;
-    font-size: 36px;
+    font-size: 30px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#frame1{
+    display: flex;
+
+}
+#alexF1{
+    flex: 2;
+}
+#textF1{
+    flex: 1;
+}
+
+.frame-big p{
+    font-size: 20px;
 }
 
 .frame-big {
