@@ -145,3 +145,66 @@ body {
  #page1 h1{
     font-size: 80px;
 }
+
+#disclaimer{
+    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+}
+
+#frame7{
+    display: flex;
+    flex-direction: column;
+}
+
+#frame7 p{
+    flex: 1;
+}
+
+#frame7-1{
+    flex: 4;
+    display: flex;
+}
+
+#frame7-1 div{
+    margin: 20px;
+}
+
+#frame8{
+    display: flex;
+    flex-direction: column;
+}
+
+#thought{
+    background-color: grey;
+    opacity: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#frame9{
+    display: flex;
+    flex-direction: column;
+}
+
+#frame9 p{
+    flex: 1;
+}
+
+#frame9-1{
+    flex: 4;
+    display: flex;
+}
+
+#frame9-1 div{
+    margin: 20px;
+}
+
+#closingFrame{
+    display: flex;
+    flex-direction: column;
+}

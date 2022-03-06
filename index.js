@@ -51,3 +51,10 @@ window.addEventListener("load", function(){
     AOS.init();
 });
 
+function change_thought_size(){
+    let percentage = window.scrollY.map(7000, 7200, 30, 1);
+    document.getElementById("thought").style.width = `${percentage}%`;
+    document.getElementById("thought").style.height = `${percentage}%`;
+}
+
+setInterval(change_thought_size, 10);
