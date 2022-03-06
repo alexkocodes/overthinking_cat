@@ -40,7 +40,7 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 }
 
 function change_heart_size(){
-    console.log(window.scrollY);
+    //console.log(window.scrollY);
     let percentage = window.scrollY.map(4900, 5510, 40, 110)
 
     document.getElementById("heart").style.width = `${percentage}%`;
