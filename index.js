@@ -35,6 +35,18 @@ function typewriter()
 }
 typewriter();
 
+Number.prototype.map = function (in_min, in_max, out_min, out_max) {
+    return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+function change_heart_size(){
+    console.log(window.scrollY);
+    let percentage = window.scrollY.map(4900, 5510, 40, 110)
+
+    document.getElementById("heart").style.width = `${percentage}%`;
+}
+setInterval(change_heart_size, 10)
+
 window.addEventListener("load", function(){
     AOS.init();
 });
