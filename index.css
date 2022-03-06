@@ -11,7 +11,8 @@ body {
 }
 */
 .page{
-    min-height: 800px;
+    /* min-height: 800px; */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +21,47 @@ body {
     /*
     border: 1px solid black;
     */
+}
+
+.frame-big, .panel {
+    color: black;
+    font-size: 36px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-big {
+    height: 75vh;
+    width: 75vw;
+}
+
+.frame-big p, .panel p {
+    margin: 50px;
+    text-align: center;
+}
+
+.frame-3, .frame-2 {
+    display: grid;
+    height: 75vh;
+    width: 75vw;
+    grid-gap: 25px;
+    align-items: center;
+}
+
+.frame-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.frame-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.panel {
+    background-color: white;
+    width: 100%;
+    height: 100%;
 }
 
 /* page 1 */
