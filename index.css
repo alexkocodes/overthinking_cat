@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rasa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Nanum+Pen+Script&family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
 body {
     background-color: #9A50F9 ;
     transition: background-color 0.5s;
@@ -16,7 +17,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Rubik', sans-serif;
+    /* Different font options: (uncomment one) */
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Patrick Hand', cursive;
     color: #E5E5E5;
     /*
     border: 1px solid black;
@@ -38,6 +41,9 @@ body {
 }
 #alexF1{
     flex: 2;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 #textF1{
     flex: 1;
