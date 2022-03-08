@@ -54,15 +54,21 @@ window.addEventListener("load", function(){
     AOS.init();
 });
 
+scenario1 = false; // change here
+
 function change_thought_size(){
-    let percentage = window.scrollY.map(5300, 5500, 30, 1);
+    let percentage =  window.scrollY.map(5300, 5500, 30, 1);
+    if(scenario1){
+        //console.log(scrollY);
+        percentage = window.scrollY.map(6300, 6500, 30, 1);
+    }
+    
     document.getElementById("thought").style.width = `${percentage}%`;
     document.getElementById("thought").style.height = `${percentage}%`;
 }
 
 setInterval(change_thought_size, 10);
 
-scenario1 = false; // change here
 var case1 = document.getElementsByClassName('scenario1');
 var case2 = document.getElementsByClassName('scenario2');
 if(scenario1===true){
