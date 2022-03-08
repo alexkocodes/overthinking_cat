@@ -38,6 +38,11 @@ body {
     border-color: black;
 }
 
+.background {
+    z-index: -1;
+    position: absolute;
+}
+
 #frame1{
     display: flex;
 
@@ -48,8 +53,15 @@ body {
     align-content: center;
     justify-content: center;
 }
+
 #textF1{
     flex: 1;
+}
+
+#f1-bg {
+    top: 0;
+    left: -20px;
+    height: 80%;
 }
 
 .frame-big p{
@@ -59,6 +71,7 @@ body {
 .frame-big {
     height: 75vh;
     width: 75vw;
+    overflow: hidden;
 }
 
 .frame-big p, .panel p {
@@ -82,6 +95,15 @@ body {
 
 #textF2{
     width: 400px;
+}
+
+#f2-bg {
+    width: 100%;
+    top: -300px;
+}
+
+#f3-bg {
+    width: 100%;
 }
 
 .frame-3, .frame-2 {
@@ -112,6 +134,11 @@ body {
 #frame4{
     display: flex;
     flex-direction: column;
+}
+
+#f4-bg {
+    width: 90%;
+    opacity: 0.8;
 }
 
 
