@@ -55,9 +55,22 @@ window.addEventListener("load", function(){
 });
 
 function change_thought_size(){
-    let percentage = window.scrollY.map(7000, 7200, 30, 1);
+    let percentage = window.scrollY.map(5300, 5500, 30, 1);
     document.getElementById("thought").style.width = `${percentage}%`;
     document.getElementById("thought").style.height = `${percentage}%`;
 }
 
 setInterval(change_thought_size, 10);
+
+scenario1 = true;
+var case1 = document.getElementsByClassName('scenario1');
+var case2 = document.getElementsByClassName('scenario2');
+if(scenario1===true){
+    for (var i = 0; i < case2.length; i ++) {
+        case2[i].style.display = 'none';
+    }
+} else {
+    for (var i = 0; i < case1.length; i ++) {
+        case1[i].style.display = 'none';
+    }
+}
