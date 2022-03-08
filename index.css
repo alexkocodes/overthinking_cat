@@ -98,8 +98,15 @@ body {
 }
 
 #f2-bg {
-    width: 100%;
-    top: -300px;
+    width: 60%;
+    top: -250px;
+    left: -200px;
+}
+
+#f2-bg-2 {
+    width: 60%;
+    bottom: -100px;
+    right: -250px;
 }
 
 #f3-bg {
@@ -128,6 +135,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* frame 4 */
@@ -179,6 +187,11 @@ body {
 #f5-1-1-bg {
     width: 100%;
     top: 50px;
+}
+
+#f5-1-2-bg {
+    width: 100%;
+    bottom: 0;
 }
 
 /* frame 6 */
@@ -235,6 +248,16 @@ body {
 
 #frame7-1 div{
     margin: 20px;
+}
+
+#f7-1-1-bg {
+    height: 140%;
+    opacity: 0.5;
+}
+
+#f7-1-2-bg {
+    height: 100%;
+    opacity: 0.8;
 }
 
 #frame7-2{
