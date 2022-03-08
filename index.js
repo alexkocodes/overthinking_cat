@@ -62,7 +62,7 @@ function change_thought_size(){
 
 setInterval(change_thought_size, 10);
 
-scenario1 = false; // change here
+scenario1 = true; // change here
 var case1 = document.getElementsByClassName('scenario1');
 var case2 = document.getElementsByClassName('scenario2');
 if(scenario1===true){
