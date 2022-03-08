@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rasa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Nanum+Pen+Script&family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
 body {
-    background-color: #9A50F9 ;
+    background-color: #CBA3F1 ;
     transition: background-color 0.5s;
 }
 
@@ -33,6 +33,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
 }
 
 #frame1{
@@ -163,7 +166,7 @@ body {
     width: 100%;
     border-style: solid;
     border-width: 3px;
-    
+
 }
 
 #frame7{
@@ -182,6 +185,11 @@ body {
 
 #frame7-1 div{
     margin: 20px;
+}
+
+#frame7-2{
+    display: flex;
+    align-content: flex-end;
 }
 
 #frame8{
