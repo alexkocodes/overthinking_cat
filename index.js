@@ -71,6 +71,8 @@ setInterval(change_thought_size, 10);
 
 var case1 = document.getElementsByClassName('scenario1');
 var case2 = document.getElementsByClassName('scenario2');
+
+
 if(scenario1===true){
     for (var i = 0; i < case2.length; i ++) {
         case2[i].style.display = 'none';
@@ -80,3 +82,21 @@ if(scenario1===true){
         case1[i].style.display = 'none';
     }
 }
+
+
+let confident_button = document.getElementById("confident_button");
+let anxious_button = document.getElementById("anxious_button");
+
+confident_button.addEventListener("click", function(){
+    scenario1 = true;
+    for (var i = 0; i < case2.length; i ++) {
+        case2[i].style.display = 'none';
+    }
+})
+
+anxious_button.addEventListener("click", function(){
+    scenario1 = false;
+    for (var i = 0; i < case1.length; i ++) {
+        case1[i].style.display = 'none';
+    }
+})
