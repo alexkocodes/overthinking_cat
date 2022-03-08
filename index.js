@@ -54,7 +54,7 @@ window.addEventListener("load", function(){
     AOS.init();
 });
 
-scenario1 = false; // change here
+scenario1 = true; // change here
 
 function change_thought_size(){
     let percentage =  window.scrollY.map(5300, 5500, 30, 1);

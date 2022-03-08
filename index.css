@@ -170,6 +170,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-style: none;
+    background-color: transparent;
 }
 
 #frame5-1 img{
@@ -185,6 +187,8 @@ body {
 #frame6{
     display: flex;
     flex-direction: column;
+    border-style: none;
+    background-color: transparent;
 }
 #heart{
     width: 20px;
@@ -222,6 +226,13 @@ body {
 #frame7{
     display: flex;
     flex-direction: column;
+    border-style: none;
+    background-color: transparent;
+}
+
+.cloud-back{
+    z-index: -1;
+    position: absolute;
 }
 
 #frame7 p{
@@ -244,6 +255,11 @@ body {
 #disclaimer{
     border-style: solid;
     border-width: 4px 0px 0px 0px;
+}
+
+#shrinkingFrame{
+    position: absolute;
+    z-index: 10;
 }
 
 #frame8{
