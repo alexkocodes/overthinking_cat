@@ -129,7 +129,7 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.panel {
+.panel{
     background-color: white;
     width: 100%;
     height: 100%;
@@ -138,6 +138,18 @@ body {
     overflow: hidden;
 }
 
+.sub_panel{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* frame 4 */
 #frame4{
     display: flex;
@@ -252,7 +264,7 @@ body {
 
 #f7-1-1-bg {
     height: 140%;
-    opacity: 0.5;
+    opacity: 0.5
 }
 
 #f7-1-2-bg {
