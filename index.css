@@ -257,11 +257,12 @@ body {
 
 #f7-1-2-bg {
     height: 100%;
-    opacity: 0.8;
+    /* opacity: 0.9; */
 }
 
 #frame7-2{
     display: flex;
+    color: rgb(199, 199, 199);
 }
 
 #disclaimer{
