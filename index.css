@@ -121,6 +121,10 @@ body {
     align-items: center;
 }
 
+/* frame 3 */
+#frame3{
+    color: white;
+}
 .frame-3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -165,11 +169,47 @@ body {
 #bottom_block{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 #buttons{
     display: flex;
     flex-direction: row;
+    flex-grow: 2;
+    align-items: center;
+}
+.button{
+    transition: transform .2s; 
+    width: 150%;
+}
+.button:hover{
+    transform: scale(1.5);
+}
+#confident_button img{
+    width: 120px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#anxious_button img{
+    width: 110px; 
+    cursor: pointer;
+}
+
+#taylorF4 img, #alexF4 img{
+    height: 80%;
+    margin-left: 100px;
+}
+
+#alexF4{
+    flex-grow: 4;
+    margin-left: 30px;
+}
+ 
+#taylorF4{
+    flex-grow: 4;
+}
+#taylorF4{
+    margin-left: 20px;
 }
 
 

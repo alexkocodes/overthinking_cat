@@ -88,9 +88,11 @@ let confident_button = document.getElementById("confident_button");
 let anxious_button = document.getElementById("anxious_button");
 
 confident_button.addEventListener("click", function(){
-    scenario1 = true;
     for (var i = 0; i < case2.length; i ++) {
         case2[i].style.display = 'none';
+    }
+    for (var i = 0; i < case1.length; i ++) {
+        case1[i].style.display = '';
     }
 })
 
@@ -99,4 +101,21 @@ anxious_button.addEventListener("click", function(){
     for (var i = 0; i < case1.length; i ++) {
         case1[i].style.display = 'none';
     }
+    for (var i = 0; i < case2.length; i ++) {
+        case2[i].style.display = '';
+    }
+})
+
+confident_button.addEventListener("mousedown", function(event){
+    event.target.style.filter = "brightness(60%)";
+})
+confident_button.addEventListener("mouseup", function(event){
+    event.target.style.filter = "brightness(100%)";
+})
+
+anxious_button.addEventListener("mousedown", function(event){
+    event.target.style.filter = "brightness(60%)";
+})
+anxious_button.addEventListener("mouseup", function(event){
+    event.target.style.filter = "brightness(100%)";
 })
