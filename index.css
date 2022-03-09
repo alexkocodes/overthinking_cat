@@ -255,9 +255,17 @@ body {
     flex-direction: column;
     border-style: none;
     background-color: transparent;
+    position: relative;
+}
+#frame6 p{
+    margin-top: -200px;
 }
 #heart{
     width: 20px;
+    position: absolute;
+}
+#cat_heart{
+    position: absolute;
 }
 /* page 1 */
 #page1{

@@ -73,15 +73,15 @@ var case1 = document.getElementsByClassName('scenario1');
 var case2 = document.getElementsByClassName('scenario2');
 
 
-if(scenario1===true){
+
     for (var i = 0; i < case2.length; i ++) {
         case2[i].style.display = 'none';
     }
-} else {
+
     for (var i = 0; i < case1.length; i ++) {
         case1[i].style.display = 'none';
     }
-}
+
 
 
 let confident_button = document.getElementById("confident_button");
@@ -94,6 +94,7 @@ confident_button.addEventListener("click", function(){
     for (var i = 0; i < case1.length; i ++) {
         case1[i].style.display = '';
     }
+    AOS.refresh();
 })
 
 anxious_button.addEventListener("click", function(){
@@ -104,6 +105,7 @@ anxious_button.addEventListener("click", function(){
     for (var i = 0; i < case2.length; i ++) {
         case2[i].style.display = '';
     }
+    AOS.refresh();
 })
 
 confident_button.addEventListener("mousedown", function(event){
