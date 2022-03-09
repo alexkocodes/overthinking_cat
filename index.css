@@ -341,7 +341,7 @@ body {
 #frame7 p{
     flex: 1;
     font-size: 30px;
-    width: 400px;
+    width: 500px;
 }
 
 #frame7-1{
@@ -414,7 +414,7 @@ body {
 
 #frame9 p{
     flex: 1;
-    font-size: 30px;
+    font-size: 25px;
     max-width: 700px;
     margin-bottom: 0;
 }
@@ -433,11 +433,22 @@ body {
     flex-direction: column;
 }
 
+#reaction1, #reaction2 p {
+    font-size: 30px;
+}
+
 #closingFrame{
     display: flex;
     flex-direction: column;
 }
 
 #closingFrame p {
-    font-size: 30px;
+    font-size: 35px;
+    max-width: 600px;
+    margin: 0;
+}
+
+#closing-bg {
+    width: 100%;
+    opacity: 0.3;
 }
