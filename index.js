@@ -48,7 +48,7 @@ function change_heart_size(){
     //console.log(window.scrollY);
     document.getElementById("heart").style.width = `${percentage}%`;
 }
-setInterval(change_heart_size, 10)
+
 
 window.addEventListener("load", function(){
     AOS.init();
@@ -57,17 +57,24 @@ window.addEventListener("load", function(){
 scenario1 = true; // change here
 
 function change_thought_size(){
-    let percentage =  window.scrollY.map(5300, 5500, 30, 1);
+    let percentage;
     if(scenario1){
-        //console.log(scrollY);
-        percentage = window.scrollY.map(6300, 6500, 30, 1);
+        if(window.scrollY.map(6400, 6800, 100, 1)/100 < 1){
+            percentage =  window.scrollY.map(6400, 6800, 100, 1)/100 ;
+            console.log(percentage);
+        }
+        else{
+            percentage = 1;
+        }
+        document.getElementsByClassName("thought")[0].style.transform = `scale(${percentage})`;
     }
-    
-    document.getElementById("thought").style.width = `${percentage}%`;
-    document.getElementById("thought").style.height = `${percentage}%`;
+    else{
+        percentage =  window.scrollY.map(5200, 5900, 100, 1)/100;
+        document.getElementsByClassName("thought")[1].style.transform = `scale(${percentage})`;
+    }
 }
 
-setInterval(change_thought_size, 10);
+
 
 var case1 = document.getElementsByClassName('scenario1');
 var case2 = document.getElementsByClassName('scenario2');
@@ -88,6 +95,7 @@ let confident_button = document.getElementById("confident_button");
 let anxious_button = document.getElementById("anxious_button");
 
 confident_button.addEventListener("click", function(){
+    scenario1 = true;
     for (var i = 0; i < case2.length; i ++) {
         case2[i].style.display = 'none';
     }
@@ -95,6 +103,8 @@ confident_button.addEventListener("click", function(){
         case1[i].style.display = '';
     }
     AOS.refresh();
+    setInterval(change_heart_size, 10)
+    setInterval(change_thought_size, 10);
 })
 
 anxious_button.addEventListener("click", function(){
@@ -106,6 +116,7 @@ anxious_button.addEventListener("click", function(){
         case2[i].style.display = '';
     }
     AOS.refresh();
+    setInterval(change_thought_size, 10);
 })
 
 confident_button.addEventListener("mousedown", function(event){

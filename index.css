@@ -257,7 +257,14 @@ body {
     background-color: transparent;
     position: relative;
 }
-#frame6 p{
+#frame6-1{
+    display: flex;
+    border-style: none;
+    background-color: transparent;
+    position: relative;
+    opacity: 0.5;
+}
+#frame6 p, #frame6-1 p{
     margin-top: -200px;
 }
 #heart{
@@ -352,14 +359,20 @@ body {
     flex-direction: column;
 }
 
-#thought{
-    background-color: grey;
+ #thought2{
+    
     opacity: 50%;
     width: 30px;
     height: 30px;
     position: relative;
     top: 0px;
     left: 0px;
+    color: black;
+    font-size: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #frame9{
